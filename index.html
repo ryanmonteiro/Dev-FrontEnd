@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Exemplo - Desenvolvimento FrontEnd - Aula 10</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Página Exemplo</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#secao1">Seção 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#secao2">Seção 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#secao3">Seção 3</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Corpo -->
+    <main class="container my-4">
+        <!-- Seção 1 -->
+        <section id="secao1" class="py-4">
+            <div class="container bg-light p-4 rounded">
+                <h2 class="text-center">Seção 1</h2>
+                <p>Algumas informações que não consegui pensar kkk.</p>
+            </div>
+        </section>
+
+        <!-- Seção 2 -->
+        <section id="secao2" class="py-4">
+            <div class="container bg-light p-4 rounded">
+                <h2 class="text-center">Seção 2</h2>
+                <p>Algumas informações que não consegui pensar X2 kkk</p>
+            </div>
+        </section>
+
+        <!-- Seção 3 -->
+        <section id="secao3" class="py-4">
+            <div class="container bg-light p-4 rounded">
+                <h2 class="text-center">Seção 3</h2>
+                <p>Algumas informações que não consegui pensar x3 kkk</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; <span id="ano"></span> Criado por Ryan Monteiro. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script para o ano dinâmico -->
+    <script>
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
